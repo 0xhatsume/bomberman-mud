@@ -32,6 +32,7 @@ export default class Bomberman extends Phaser.Physics.Arcade.Sprite {
 		{   
             this.anims.play('bomberman-walk-left', true)
 			this.setVelocity(-this.speed, 0)
+			this.scaleX = 1 * this.scene.scalefactor
 		}
 		else if (rightDown)
 		{
